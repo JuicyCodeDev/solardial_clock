@@ -1,1 +1,48 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Solar Dial Clock</title>
+   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😎</text></svg>">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+   <div class="card">
+      <div class="location-text">Location: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+      <canvas id="clock"></canvas>
+      <div class="digital-clock"></div>
+      <div class="sun-time-container">
+         <div>
+            <div class="first_row_sun_time_data">First light:</div>
+            <div>Sunrise:</div>
+         </div>
+         <div>
+            <div class="first_row_sun_time_data" id="first-light"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+            <div id="sunrise"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+         </div>
+         <div>
+            <div class="first_row_sun_time_data">Sunset:</div>
+            <div>Last light:</div>
+         </div>
+         <div>
+            <div class="first_row_sun_time_data" id="sunset"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+            <div id="last-light"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+         </div>
+      </div>
+      <div class="weather-container">
+         <img src="" alt="" class="weather-icon">
+         <div class="temperature"></div>
+      </div>
+   </div>
+   <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jcanvas/21.0.1/min/jcanvas.min.js" integrity="sha512-pu2L+33GBCuTrTU3mNJphG2Hm2JKlLA01280LIiz29D40f/UFOU5dEVxVuW46p+HZeZhXvQsUxtVFxPabX9S9g==" crossorigin="anonymous"></script>
+   <script  src="clock_canvas.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+* {
+  font-family: 'Varela Round';
+}
+
+.card {
+  background: #EDEDED;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 43px;
+  width: 350px;
+  margin: 50px auto 50px auto;
+  padding: 35px 20px 35px 20px;
+}
+
+.location-text {
+  font-size: 1.2em;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#clock {
+  padding: 0;
+  margin: auto;
+  display: block;
+}
+
+.digital-clock {
+  font-size: 1.5em;
+  width: 100%;
+  text-align: center;
+  padding: 25px 0px;
+}
+
+.weather {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sun-time-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 25px;
+  padding-bottom: 25px;
+}
+
+.first_row_sun_time_data {
+  margin-bottom: 10px;
+}
+
+.weather-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weather-icon {
+  width: 75px;
+  height: 75rpx;
+  padding-right: 12px;
+}
+
+.temperature {
+  font-size: 3em;
+  padding-left: 12px;
+}
+
+img {
+  -webkit-filter: invert(10%);
+          filter: invert(10%);
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+}
+
+.lds-ring div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #000 transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+@-webkit-keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=main.css.map */

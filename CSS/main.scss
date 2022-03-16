@@ -1,1 +1,116 @@
+$side-length: 250px;
+
+* {
+   font-family: 'Varela Round';
+}
+
+.card {
+   background: #EDEDED;
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+   border-radius: 43px;
+   width: 350px;
+   margin: 50px auto 50px auto;
+   padding: 35px 20px 35px 20px;
+}
+
+.location-text {
+   font-size: 1.2em;
+   width: 100%;
+   text-align: center;
+   padding-bottom: 20px;
+}
+
+#clock {
+   padding: 0;
+   margin: auto;
+   display: block;
+}
+
+.digital-clock {
+   font-size: 1.5em;
+   width: 100%;
+   text-align: center;
+   padding: 25px 0px;
+}
+
+.weather {
+   width: 100%;
+   display: flex;
+}
+
+.sun-time-container {
+   display: flex;
+   justify-content: space-between;
+   margin: 0px 25px;
+   padding-bottom: 25px;
+}
+
+.first_row_sun_time_data {
+   margin-bottom: 10px;
+}
+
+.weather-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.weather-icon {
+   width: 75px; height: 75rpx;
+   padding-right: 12px;
+
+}
+
+.temperature {
+   font-size: 3em;
+   padding-left: 12px;
+}
+
+img {
+   filter: invert(10%);
+}
+
+
+// Loading Animation 
+
+.lds-ring {
+   display: inline-block;
+   position: relative;
+   width: 15px;
+   height: 15px;
+ }
+ .lds-ring div {
+   box-sizing: border-box;
+   display: block;
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   border: 2px solid #000;
+   border-radius: 50%;
+   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+   border-color: #000 transparent transparent transparent;
+ }
+ .lds-ring div:nth-child(1) {
+   animation-delay: -0.45s;
+ }
+ .lds-ring div:nth-child(2) {
+   animation-delay: -0.3s;
+ }
+ .lds-ring div:nth-child(3) {
+   animation-delay: -0.15s;
+ }
+ @keyframes lds-ring {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+ 
+
+
+
+
+
 
