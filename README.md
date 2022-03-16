@@ -16,7 +16,7 @@ and the time of the day's last light (the end of the civil twilight).
 
 3. The weather...
 
-that shows the current temperature as well as a weather icon.
+...that shows the current temperature as well as a weather icon.
 
 
 NOTE:
